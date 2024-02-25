@@ -245,20 +245,22 @@ def generar_grafico_peliculas():
     global lista_peliculas, lista_actores
     grafo = gv.Digraph(format='png')
 
-    # Agregar nodos para cada película con forma de tabla
+    grafo.attr(rankdir='TB', splines='ortho')  
     for pelicula in lista_peliculas:
-        etiqueta = f'<<b>Película</b><br/>{pelicula.get_nombre()}>'
-        grafo.node(pelicula.get_nombre(), shape='record', label=etiqueta)
+        etiqueta = f'<<table border="0" cellborder="1" cellspacing="0">' \
+                  f'<tr><td colspan="1" bgcolor="lightgrey"><b>{pelicula.get_nombre()}</b></td></tr>' \
+                  f'<tr><td>{pelicula.get_year()}</td></tr>' \
+                  f'<tr><td>{pelicula.get_genero()}</td></tr>' \
+                  f'</table>>'
+        grafo.node(pelicula.get_nombre(), shape='plaintext', label=etiqueta)
 
-    # Agregar nodos para cada actor con forma de círculo y color verde
     for actor in lista_actores:
-        grafo.node(actor, shape='record', color='black',)
+        grafo.node(actor, shape='circle', color='green')
 
-    # Agregar conexiones entre actores y películas
     for pelicula in lista_peliculas:
         actores_pelicula = pelicula.get_actores()
         for actor in actores_pelicula:
-            grafo.edge(pelicula.get_nombre(),actor)  
+            grafo.edge(actor, pelicula.get_nombre())  # Conectar actor con película
 
     print("Gráfico de películas generado con éxito.")
 
