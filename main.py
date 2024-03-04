@@ -49,6 +49,7 @@ def mostrar_menu_principal():
     print("")
     opcion = input("Selecciona una opción: ")
     if opcion == '1':
+        limpiar_variables()
         archivo = input("Ingrese el nombre del archivo de entrada: ")
         contenido = cargar_archivo_entrada(archivo + ".lfp")
         agregarPeliculas()
@@ -109,6 +110,7 @@ def agregarPeliculas():
             year = cadena[2].strip()
             genero = cadena[3].strip()
             pelicula = peli.Pelicula(nombre, year, genero)
+            eliminar_pelicula(nombre)
             lista_peliculas.append(pelicula)
             for j in actores:
                 actor = j.strip()
@@ -122,16 +124,14 @@ def mostrarActores_filtro():
     print("===================================")
     print("         Mostrar Actores           ")
     print("===================================")
-    for i in lista_actores:
-        contador += 1
-        print(f"{contador}-{i}")
     
-    actor_elegido = int(input("Selecciona un actor: "))
+    in_actor = input("Ingrese el nombre del actor: ")
 
-    filtrar_por_actor(lista_actores[actor_elegido-1])
+    filtrar_por_actor(in_actor)
 
 
 def filtrar_por_actor(actor_elegido):
+    contador = 0
     print("===================================")
     print("        Peliculas por actor        ")
     print("===================================")
@@ -139,6 +139,9 @@ def filtrar_por_actor(actor_elegido):
         aux_actores = i.get_actores()
         if actor_elegido in aux_actores:
             print(i.get_nombre())
+            contador += 1
+    if contador == 0:
+        print("No hay películas registradas con ese actor")
 
 def opcion_filtrado_por_año(opcion_year):
     contador = 0
@@ -150,8 +153,11 @@ def opcion_filtrado_por_año(opcion_year):
         if i.get_year() == opcion_year:
             contador += 1
             print(f"{contador}-{i.get_nombre()}-{i.get_genero()}")
+    if contador == 0:
+        print("No hay películas registradas en ese año")
 
 def opcion_filtrado_por_genero(opcion_genero):
+    contador = 0
     print("===================================")
     print("        Peliculas por género        ")
     print("===================================")
@@ -159,6 +165,9 @@ def opcion_filtrado_por_genero(opcion_genero):
     for i in lista_peliculas:
         if i.get_genero() == opcion_genero:
             print(i.get_nombre())
+            contador += 1
+    if contador == 0:
+        print("No hay películas registradas con ese género")
 
 def mostrar_peliculas():
     contador = 0
@@ -178,6 +187,9 @@ def mostrarActores(pelicula_elegida):
     t.sleep(2)
     print(f"Nombre: {lista_peliculas[pelicula_elegida-1].get_nombre()}")
     actores = lista_peliculas[pelicula_elegida-1].get_actores()
+    if len(actores) == 0:
+        print("No hay actores registrados")
+        return
     actores_str = ", ".join(actores)
     print(f"Actores: {actores_str}")
 
@@ -233,6 +245,14 @@ def opcion_filtrado():
             
         elif opcion == '4':
             return 
+        
+def eliminar_pelicula(nombre_pelicula):
+    global lista_peliculas
+    for pelicula in lista_peliculas:
+        if pelicula.get_nombre() == nombre_pelicula:
+            lista_peliculas.remove(pelicula)
+            cambioColor(2,f"La película '{nombre_pelicula}' ha sido eliminada con éxito.")
+            return
     
 def limpiar_variables():
     global archivo, contenido, lista_peliculas, lista_actores
@@ -245,7 +265,6 @@ def generar_grafico_peliculas():
     global lista_peliculas, lista_actores
     grafo = gv.Digraph(format='png')
 
-    grafo.attr(rankdir='TB', splines='ortho')  
     for pelicula in lista_peliculas:
         etiqueta = f'<<table border="0" cellborder="1" cellspacing="0">' \
                   f'<tr><td colspan="1" bgcolor="lightgrey"><b>{pelicula.get_nombre()}</b></td></tr>' \
@@ -255,18 +274,15 @@ def generar_grafico_peliculas():
         grafo.node(pelicula.get_nombre(), shape='plaintext', label=etiqueta)
 
     for actor in lista_actores:
-        grafo.node(actor, shape='circle', color='green')
+        grafo.node(actor, shape='circle', color='black')
 
     for pelicula in lista_peliculas:
         actores_pelicula = pelicula.get_actores()
         for actor in actores_pelicula:
-            grafo.edge(actor, pelicula.get_nombre())  # Conectar actor con película
+            grafo.edge(actor, pelicula.get_nombre()) 
 
+    grafo.render('peliculas', view=True)
     print("Gráfico de películas generado con éxito.")
-
-
-
-
 
 
 mostrar_informacion_desarrollador()

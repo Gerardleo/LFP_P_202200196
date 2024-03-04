@@ -1,0 +1,140 @@
+digraph {
+	"The Avengers " [label=<<table border="0" cellborder="1" cellspacing="0"><tr><td colspan="1" bgcolor="lightgrey"><b>The Avengers </b></td></tr><tr><td>2012</td></tr><tr><td>Ficcion</td></tr></table>> shape=plaintext]
+	Spiderman [label=<<table border="0" cellborder="1" cellspacing="0"><tr><td colspan="1" bgcolor="lightgrey"><b>Spiderman</b></td></tr><tr><td>2002</td></tr><tr><td>Accion</td></tr></table>> shape=plaintext]
+	"The Amazing Spiderman" [label=<<table border="0" cellborder="1" cellspacing="0"><tr><td colspan="1" bgcolor="lightgrey"><b>The Amazing Spiderman</b></td></tr><tr><td>2012</td></tr><tr><td>Accion</td></tr></table>> shape=plaintext]
+	"The Amazing Spiderman 2" [label=<<table border="0" cellborder="1" cellspacing="0"><tr><td colspan="1" bgcolor="lightgrey"><b>The Amazing Spiderman 2</b></td></tr><tr><td>2014</td></tr><tr><td>Accion</td></tr></table>> shape=plaintext]
+	"Spiderman Homecoming" [label=<<table border="0" cellborder="1" cellspacing="0"><tr><td colspan="1" bgcolor="lightgrey"><b>Spiderman Homecoming</b></td></tr><tr><td>2017</td></tr><tr><td>Accion</td></tr></table>> shape=plaintext]
+	"Avengers Infinity War" [label=<<table border="0" cellborder="1" cellspacing="0"><tr><td colspan="1" bgcolor="lightgrey"><b>Avengers Infinity War</b></td></tr><tr><td>2018</td></tr><tr><td>Accion</td></tr></table>> shape=plaintext]
+	"The Matrix" [label=<<table border="0" cellborder="1" cellspacing="0"><tr><td colspan="1" bgcolor="lightgrey"><b>The Matrix</b></td></tr><tr><td>1999</td></tr><tr><td>Ficcion</td></tr></table>> shape=plaintext]
+	Titanic [label=<<table border="0" cellborder="1" cellspacing="0"><tr><td colspan="1" bgcolor="lightgrey"><b>Titanic</b></td></tr><tr><td>1997</td></tr><tr><td>Romance</td></tr></table>> shape=plaintext]
+	Inception [label=<<table border="0" cellborder="1" cellspacing="0"><tr><td colspan="1" bgcolor="lightgrey"><b>Inception</b></td></tr><tr><td>2010</td></tr><tr><td>Thriller</td></tr></table>> shape=plaintext]
+	"The Dark Knight" [label=<<table border="0" cellborder="1" cellspacing="0"><tr><td colspan="1" bgcolor="lightgrey"><b>The Dark Knight</b></td></tr><tr><td>2008</td></tr><tr><td>Accion</td></tr></table>> shape=plaintext]
+	"Forrest Gump" [label=<<table border="0" cellborder="1" cellspacing="0"><tr><td colspan="1" bgcolor="lightgrey"><b>Forrest Gump</b></td></tr><tr><td>1994</td></tr><tr><td>Drama</td></tr></table>> shape=plaintext]
+	Interstellar [label=<<table border="0" cellborder="1" cellspacing="0"><tr><td colspan="1" bgcolor="lightgrey"><b>Interstellar</b></td></tr><tr><td>2014</td></tr><tr><td>ficcion</td></tr></table>> shape=plaintext]
+	"The Godfather" [label=<<table border="0" cellborder="1" cellspacing="0"><tr><td colspan="1" bgcolor="lightgrey"><b>The Godfather</b></td></tr><tr><td>1972</td></tr><tr><td>Drama</td></tr></table>> shape=plaintext]
+	"The Shawshank Redemption" [label=<<table border="0" cellborder="1" cellspacing="0"><tr><td colspan="1" bgcolor="lightgrey"><b>The Shawshank Redemption</b></td></tr><tr><td>1994</td></tr><tr><td>Drama</td></tr></table>> shape=plaintext]
+	"Pulp Fiction" [label=<<table border="0" cellborder="1" cellspacing="0"><tr><td colspan="1" bgcolor="lightgrey"><b>Pulp Fiction</b></td></tr><tr><td>1994</td></tr><tr><td>Drama</td></tr></table>> shape=plaintext]
+	"The Lord of the Rings The Fellowship of the Ring" [label=<<table border="0" cellborder="1" cellspacing="0"><tr><td colspan="1" bgcolor="lightgrey"><b>The Lord of the Rings The Fellowship of the Ring</b></td></tr><tr><td>2001</td></tr><tr><td>Accion</td></tr></table>> shape=plaintext]
+	"Aventura The Matrix" [label=<<table border="0" cellborder="1" cellspacing="0"><tr><td colspan="1" bgcolor="lightgrey"><b>Aventura The Matrix</b></td></tr><tr><td>1999</td></tr><tr><td>ficcion</td></tr></table>> shape=plaintext]
+	Goodfellas [label=<<table border="0" cellborder="1" cellspacing="0"><tr><td colspan="1" bgcolor="lightgrey"><b>Goodfellas</b></td></tr><tr><td>1990</td></tr><tr><td>Crimen</td></tr></table>> shape=plaintext]
+	"Fight Club" [label=<<table border="0" cellborder="1" cellspacing="0"><tr><td colspan="1" bgcolor="lightgrey"><b>Fight Club</b></td></tr><tr><td>1999</td></tr><tr><td>Drama</td></tr></table>> shape=plaintext]
+	"Schindler's List" [label=<<table border="0" cellborder="1" cellspacing="0"><tr><td colspan="1" bgcolor="lightgrey"><b>Schindler's List</b></td></tr><tr><td>1993</td></tr><tr><td>Drama</td></tr></table>> shape=plaintext]
+	"The Silence of the Lambs" [label=<<table border="0" cellborder="1" cellspacing="0"><tr><td colspan="1" bgcolor="lightgrey"><b>The Silence of the Lambs</b></td></tr><tr><td>1991</td></tr><tr><td>Suspenso</td></tr></table>> shape=plaintext]
+	Gladiator [label=<<table border="0" cellborder="1" cellspacing="0"><tr><td colspan="1" bgcolor="lightgrey"><b>Gladiator</b></td></tr><tr><td>2000</td></tr><tr><td>Accion</td></tr></table>> shape=plaintext]
+	"Robert Downey Jr" [color=black shape=circle]
+	"Chris Evans" [color=black shape=circle]
+	"Chris Hemsworth" [color=black shape=circle]
+	"Tobey Maguire" [color=black shape=circle]
+	"Kirsten Dunst" [color=black shape=circle]
+	"Willem Dafoe" [color=black shape=circle]
+	"Andrew Garfield" [color=black shape=circle]
+	"Emma Stone" [color=black shape=circle]
+	"Tom Holland" [color=black shape=circle]
+	Zendaya [color=black shape=circle]
+	"Tim Robbins" [color=black shape=circle]
+	"Morgan Freeman" [color=black shape=circle]
+	"Marlon Brando" [color=black shape=circle]
+	"Al Pacino" [color=black shape=circle]
+	"James Caan" [color=black shape=circle]
+	"Christian Bale" [color=black shape=circle]
+	"Heath Ledger" [color=black shape=circle]
+	"Tom Hanks" [color=black shape=circle]
+	"Robin Wright" [color=black shape=circle]
+	"Gary Sinise" [color=black shape=circle]
+	"Leonardo DiCaprio" [color=black shape=circle]
+	"Joseph Gordon-Levitt" [color=black shape=circle]
+	"Ellen Page" [color=black shape=circle]
+	"John Travolta" [color=black shape=circle]
+	"Uma Thurman" [color=black shape=circle]
+	"Samuel L. Jackson" [color=black shape=circle]
+	"Keanu Reeves" [color=black shape=circle]
+	"Laurence Fishburne" [color=black shape=circle]
+	"Carrie-Anne Moss" [color=black shape=circle]
+	"Elijah Wood" [color=black shape=circle]
+	"Ian McKellen" [color=black shape=circle]
+	"Viggo Mortensen" [color=black shape=circle]
+	"Kate Winslet" [color=black shape=circle]
+	"Billy Zane" [color=black shape=circle]
+	"Aaron Eckhart" [color=black shape=circle]
+	"Matthew McConaughey" [color=black shape=circle]
+	"Anne Hathaway" [color=black shape=circle]
+	"Jessica Chastain" [color=black shape=circle]
+	"Bob Gunton" [color=black shape=circle]
+	"Samuel  Jackson" [color=black shape=circle]
+	"Robert De Niro" [color=black shape=circle]
+	"Ray Liotta" [color=black shape=circle]
+	"Joe Pesci" [color=black shape=circle]
+	"Brad Pitt" [color=black shape=circle]
+	"Edward Norton" [color=black shape=circle]
+	"Helena Bonham Carter" [color=black shape=circle]
+	"Liam Neeson" [color=black shape=circle]
+	"Ben Kingsley" [color=black shape=circle]
+	"Ralph Fiennes" [color=black shape=circle]
+	"Jodie Foster" [color=black shape=circle]
+	"Anthony Hopkins" [color=black shape=circle]
+	"Scott Glenn" [color=black shape=circle]
+	"Russell Crowe" [color=black shape=circle]
+	"Joaquin Phoenix" [color=black shape=circle]
+	"Connie Nielsen" [color=black shape=circle]
+	"Robert Downey Jr" -> "The Avengers "
+	"Chris Evans" -> "The Avengers "
+	"Chris Hemsworth" -> "The Avengers "
+	"Tobey Maguire" -> Spiderman
+	"Kirsten Dunst" -> Spiderman
+	"Willem Dafoe" -> Spiderman
+	"Andrew Garfield" -> "The Amazing Spiderman"
+	"Emma Stone" -> "The Amazing Spiderman"
+	"Andrew Garfield" -> "The Amazing Spiderman 2"
+	"Emma Stone" -> "The Amazing Spiderman 2"
+	"Tom Holland" -> "Spiderman Homecoming"
+	Zendaya -> "Spiderman Homecoming"
+	"Robert Downey Jr" -> "Avengers Infinity War"
+	"Tom Holland" -> "Avengers Infinity War"
+	"Keanu Reeves" -> "The Matrix"
+	"Laurence Fishburne" -> "The Matrix"
+	"Carrie-Anne Moss" -> "The Matrix"
+	"Leonardo DiCaprio" -> Titanic
+	"Kate Winslet" -> Titanic
+	"Billy Zane" -> Titanic
+	"Leonardo DiCaprio" -> Inception
+	"Joseph Gordon-Levitt" -> Inception
+	"Christian Bale" -> "The Dark Knight"
+	"Heath Ledger" -> "The Dark Knight"
+	"Aaron Eckhart" -> "The Dark Knight"
+	"Tom Hanks" -> "Forrest Gump"
+	"Robin Wright" -> "Forrest Gump"
+	"Gary Sinise" -> "Forrest Gump"
+	"Matthew McConaughey" -> Interstellar
+	"Anne Hathaway" -> Interstellar
+	"Jessica Chastain" -> Interstellar
+	"Marlon Brando" -> "The Godfather"
+	"Al Pacino" -> "The Godfather"
+	"James Caan" -> "The Godfather"
+	"Tim Robbins" -> "The Shawshank Redemption"
+	"Morgan Freeman" -> "The Shawshank Redemption"
+	"Bob Gunton" -> "The Shawshank Redemption"
+	"John Travolta" -> "Pulp Fiction"
+	"Uma Thurman" -> "Pulp Fiction"
+	"Samuel  Jackson" -> "Pulp Fiction"
+	"Elijah Wood" -> "The Lord of the Rings The Fellowship of the Ring"
+	"Ian McKellen" -> "The Lord of the Rings The Fellowship of the Ring"
+	"Viggo Mortensen" -> "The Lord of the Rings The Fellowship of the Ring"
+	"Keanu Reeves" -> "Aventura The Matrix"
+	"Laurence Fishburne" -> "Aventura The Matrix"
+	"Carrie-Anne Moss" -> "Aventura The Matrix"
+	"Robert De Niro" -> Goodfellas
+	"Ray Liotta" -> Goodfellas
+	"Joe Pesci" -> Goodfellas
+	"Brad Pitt" -> "Fight Club"
+	"Edward Norton" -> "Fight Club"
+	"Helena Bonham Carter" -> "Fight Club"
+	"Liam Neeson" -> "Schindler's List"
+	"Ben Kingsley" -> "Schindler's List"
+	"Ralph Fiennes" -> "Schindler's List"
+	"Jodie Foster" -> "The Silence of the Lambs"
+	"Anthony Hopkins" -> "The Silence of the Lambs"
+	"Scott Glenn" -> "The Silence of the Lambs"
+	"Russell Crowe" -> Gladiator
+	"Joaquin Phoenix" -> Gladiator
+	"Connie Nielsen" -> Gladiator
+}
